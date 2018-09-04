@@ -1,0 +1,533 @@
+/*======  Main Css Rules  for Main Elements in The project  =====*/
+
+
+/* open-sans-regular - latin */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v15-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/open-sans-v15-latin-regular.svg#OpenSans') format('svg');
+    /* Legacy iOS */
+}
+
+
+/* raleway-regular - latin */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v12-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway-Regular'), url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    font-size: 15px !important;
+    font-family: 'Merienda', sans-serif;
+    color: #000;
+    height: 2000px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    transition: all .3s ease-in-out
+}
+
+
+/*======   End of Main Css Rules  ====== */
+
+
+/*Start Login Form*/
+
+.mainLogin {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-image: url(../img/05.jpg);
+    background-size: cover;
+}
+
+.mainLogin .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLogin .lgn {
+    width: 900px;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 75px 70px;
+    align-items: center;
+}
+
+.mainLogin .lgn .img {
+    margin-bottom: 70px;
+}
+
+.mainLogin .login-form {
+    margin-left: 60px;
+}
+
+.mainLogin .login-form h4 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 70px;
+    text-transform: capitalize;
+    color: #222;
+    font-weight: bold;
+}
+
+.mainLogin .login-form .form-group {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mainLogin .form-group .form-control {
+    background-color: #e6e6e6;
+    padding: 11px 20px 11px 65px;
+    color: #666;
+    border-radius: 50px;
+    font-size: 17px;
+    font-family: 'arial';
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    transition: all .2s ease-in-out;
+    outline: none !important;
+    box-shadow: none;
+    border-color: #DDD
+}
+
+.mainLogin .form-group i {
+    position: absolute;
+    left: 35px;
+    font-size: 20px;
+    color: #777;
+    text-align: center;
+    transition: all .2s ease;
+}
+
+.mainLogin .btn {
+    display: block;
+    border-radius: 50px;
+    padding: 9px;
+    margin-top: 35px;
+    background-color: #57b846;
+    border-color: #57b846;
+    text-transform: uppercase;
+    font-size: 17px;
+    outline: none !important;
+    color: #FFF !important;
+}
+
+.mainLogin .forget {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: #888;
+}
+
+.mainLogin .forget a {
+    color: #555;
+}
+
+.mainLogin .New-Account {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.mainLogin .New-Account a {
+    color: #888;
+}
+
+.mainLogin .btn:hover {
+    background-color: #111;
+    border-color: #111;
+}
+
+.mainLogin .input-group:focus i {
+    position: absolute;
+}
+
+.mainLogin a:hover {
+    color: #57b846
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {
+    .mainLogin .lgn {
+        width: 300px;
+        padding: 50px 10px;
+    }
+    .mainLogin .lgn .img {
+        margin-bottom: 70px;
+        display: none;
+    }
+    .mainLogin .login-form {
+        margin-left: 0;
+    }
+    .mainLogin .login-form h4 {
+        margin-bottom: 60px;
+    }
+    .mainLogin .forget {
+        margin: 15px 0;
+        color: #888;
+    }
+    .mainLogin .New-Account {
+        margin-top: 40px;
+    }
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+    .mainLogin .lgn {
+        width: 600px;
+        padding: 50px 15px;
+    }
+    .mainLogin.lgn .img {
+        margin-bottom: 50px;
+        padding: 0 50px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .mainLogin img {
+        width: 100%;
+    }
+    .mainLogin .login-form {
+        margin-left: 0;
+    }
+    .mainLogin .login-form h4 {
+        margin-bottom: 60px;
+    }
+    .mainLogin .forget {
+        margin: 15px 0;
+        color: #888;
+    }
+    .New-Account {
+        margin-top: 40px;
+    }
+}
+
+
+/*End Login Form*/
+
+
+/*Start Nav bar*/
+
+.navbar {
+    font-size: 1.2em;
+    padding: 1.2rem .9rem;
+    background-color: #111 !important;
+    color: rgba(255, 255, 255, .8);
+}
+
+.navbar-brand {
+    color: rgba(255, 255, 255, .8) !important;
+    padding-right: .8rem;
+    padding-left: .8rem;
+    font-size: 1.2em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .8);
+    padding-right: .8rem;
+    padding-left: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #27ae60
+}
+
+.dropdown-menu {
+    left: -10px;
+    min-width: 12rem;
+    padding: 0;
+    margin: 0.1rem 0 0;
+    font-size: 1rem;
+}
+
+.dropdown-item {
+    padding: 11px 25px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #27ae60;
+    padding-left: 30px;
+}
+
+
+/*Start Edit Form*/
+
+h1 {
+    padding: 40px 0 20px;
+    font-weight: bold;
+    color: #555;
+    font-size: 50px;
+}
+
+.edit_form .col-form-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin-right: -50px
+}
+
+.edit_form .form-control {
+    padding: 9px 20px;
+    background-color: #EEE;
+    border-radius: 50px;
+}
+
+.edit_form .btn {
+    display: block;
+    border-radius: 50px;
+    padding: 9px;
+    margin-top: 15px;
+    margin-left: -45px;
+    background-color: #57b846;
+    border-color: #57b846;
+    text-transform: uppercase;
+    font-size: 17px;
+    outline: none !important;
+    color: #FFF !important;
+}
+
+.edit_form .btn:hover {
+    background-color: #111;
+    border-color: #111;
+}
+
+.alert-update {
+    width: 500px;
+    font-size: 25px;
+    margin: 30px auto;
+}
+
+
+/*Astrick In Required*/
+
+.form-control {
+    position: relative;
+}
+
+span.astreick {
+    font-size: 25px;
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    color: red;
+    display: block
+}
+
+i.show-pass {
+    position: absolute;
+    top: 14px;
+    right: -6px;
+    font-size: 16px;
+}
+
+
+/*End Edit Form
+
+/*Start DAshboard Page*/
+
+.stat {
+    margin: 40px 0 50px;
+    background-color: #888;
+    padding: 25px 30px 35px;
+    border-radius: 15px;
+    font-size: 20px;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    /*font-weight: bold;*/
+    color: #FFF
+}
+
+.stat span {
+    display: block;
+    font-size: 50px;
+    color: #FFF;
+    /*font-weight: bold;*/
+}
+
+span a {
+    color: #FFF !important;
+}
+
+.stat.stat-admin {
+    background-color: #2980b9
+}
+
+.stat.stat-category {
+    background-color: #27ae60
+}
+
+.stat.stat-items {
+    background-color: #e74c3c
+}
+
+.stat.stat-resrv {
+    background-color: #2980b9
+}
+
+.stat.stat-mes {
+    background-color: #9b59b6
+}
+
+.card {
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-size: 18px;
+}
+
+.card i {
+    margin-right: 10px
+}
+
+.card-header {
+    background-color: #EEE
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.cat {
+    padding: 20px 30px 10px;
+}
+
+.cat h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    /* font-family: 'Lato'*/
+}
+
+.cat p {
+    font-family: 'Open Sans', Tahoma;
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+hr:last-child {
+    display: none;
+}
+
+.ca .add {
+    margin: 20px 0 0;
+    padding: 10px
+}
+
+.ord {
+    float: right;
+    display: block
+}
+
+.ord a {
+    color: #222 !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ord a.active {
+    color: red !important;
+}
+
+.form-control {
+    /*font-family: 'Lato', Tahoma !important;*/
+    color: #000;
+    font-size: 17px;
+    padding-right: 40px
+}
+
+.contain {
+    margin: 20px 80px;
+}
+
+.item img {
+    width: 80px;
+    height: 80px;
+    /*border-radius: 50%;*/
+}
+
+.offer img {
+    width: 100px;
+    height: 80px;
+    /*border-radius: 50%;*/
+}
+
+.offer td,
+.offer th,
+.item td,
+.item th {
+    line-height: 5;
+    padding: 7px 0;
+}
+
+.last.card-body {
+    padding: 0;
+}
+
+.last span {
+    float: left;
+}
+
+.last li {
+    display: block;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.last li:hover {
+    background-color: #DDD;
+}
+
+.last a {
+    float: right;
+}
+
+.last .clear-flex {
+    clear: both
+}
+
+
+/*End Edit Form;*/
